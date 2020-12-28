@@ -26,7 +26,8 @@
 <script type="text/javascript">
     // var socket = io('http://localhost:3008');///URL da api
 
-    var socket = io('https://backand-chat.herokuapp.com');
+    const api = "https://backand-chat.herokuapp.com";
+    var socket = io(api);
     
     function renderMessage(message){
         console.log(message);
