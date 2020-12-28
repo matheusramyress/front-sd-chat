@@ -168,6 +168,6 @@ io.on('connection',async socket => {
 });
 
 
-server.listen(3008, ()=>{
+server.listen(process.env.PORT || 3008, ()=>{
     console.log('Conectado na porta 3008');
 });
